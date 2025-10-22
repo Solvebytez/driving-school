@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { BreadcrumbHero } from "@/components/site/common/breadcrumb-hero";
 import { ContactInfoSection } from "@/components/site/contact/contact-info-section";
@@ -8,7 +8,7 @@ import { ContactFormSection } from "@/components/site/contact/contact-form-secti
 import { ContactLocationDropdown } from "@/components/site/contact/location-dropdown";
 import { useLocationStore } from "@/lib/stores/location-store";
 
-export default function ContactPage() {
+function ContactPageContent() {
   const searchParams = useSearchParams();
   const { currentLocation, setLocation, getLocationData } = useLocationStore();
 
@@ -51,5 +51,13 @@ export default function ContactPage() {
         locationData={locationData}
       />
     </main>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactPageContent />
+    </Suspense>
   );
 }
