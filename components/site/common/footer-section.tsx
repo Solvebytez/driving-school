@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -25,60 +26,14 @@ export function FooterSection() {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex flex-col">
-              {/* Main Logo with Road Graphic */}
-              <div className="relative">
-                {/* Road Graphic */}
-                <div className="absolute -top-4 left-0 w-full h-8">
-                  <svg viewBox="0 0 200 30" className="w-full h-full">
-                    <path
-                      d="M 10 25 Q 100 5 190 25"
-                      stroke="#374151"
-                      strokeWidth="3"
-                      fill="none"
-                    />
-                    <path
-                      d="M 10 25 Q 100 5 190 25"
-                      stroke="white"
-                      strokeWidth="1"
-                      fill="none"
-                      strokeDasharray="5,5"
-                    />
-                  </svg>
-                </div>
-
-                {/* TOP STAR Text */}
-                <div className="flex items-center">
-                  <span className="pathway-extreme text-3xl font-bold text-white">
-                    TOP ST
-                  </span>
-                  {/* Red Star replacing A */}
-                  <div className="relative">
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      className="mx-1"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                        fill="#dc2626"
-                        stroke="#000"
-                        strokeWidth="0.5"
-                      />
-                    </svg>
-                  </div>
-                  <span className="pathway-extreme text-3xl font-bold text-white">
-                    R
-                  </span>
-                </div>
-              </div>
-
-              {/* Sub-text */}
-              <div className="mt-2">
-                <span className="pathway-extreme text-sm font-medium text-gray-300 uppercase tracking-wide">
-                  - DRIVING SCHOOL -
-                </span>
-              </div>
+              <Image
+                src="/logo-footer.png"
+                alt="Driving Hero Logo"
+                width={120}
+                height={60}
+                className="h-16 w-auto"
+                priority
+              />
             </div>
 
             {/* Horizontal Line extending to the right */}
