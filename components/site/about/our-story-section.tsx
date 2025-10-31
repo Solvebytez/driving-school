@@ -99,7 +99,7 @@ export function OurStorySection() {
               <div className="lg:w-1/2 lg:pr-8">
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/mto-certified-instructors.jpg"
+                    src="/modern-car-interior-driving.jpg"
                     alt="MTO Certified Instructors"
                     fill
                     className="object-cover"
