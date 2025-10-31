@@ -9,7 +9,7 @@ export function CoursesSection() {
       id: 1,
       title: "4-Day In-Class Course",
       description:
-        "Students that prefer learning in a interactive classroom environment this is the perfect option for you. Our in-class teachers make your learning experience like no other. They provide an engaging and interactive classroom environment so that every single one of our students can get the benefits of becoming a Top Star driver on the road.",
+        "Students that prefer learning in a interactive classroom environment this is the perfect option for you. Our in-class teachers make your learning experience like no other. They provide an engaging and interactive classroom environment so that every single one of our students can get the benefits of becoming a Driving Hero on the road.",
       image: "/images/courses-v1-1.jpg",
       duration: "4 Days",
       schedule: "9:00 AM - 2:30 PM",

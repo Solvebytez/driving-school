@@ -68,13 +68,13 @@ export function AboutUsSection() {
             </div>
 
             {/* Main Title */}
-            <h2 className="pathway-extreme text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl">
-              Driving Excellence Since Day One
+            <h2 className="pathway-extreme text-2xl font-bold text-gray-800 md:text-3xl lg:text-4xl">
+              Driving Excellence <span className="text-red-500 text-3xl md:text-4xl lg:text-5xl">Since Day One</span>
             </h2>
 
             {/* Description */}
             <p className="onest text-gray-600 leading-relaxed">
-              Top Star Driving School has been Ontario's premier driving
+              Driving Hero has been Ontario's premier driving
               education provider for over 16 years. We are committed to
               delivering exceptional driving instruction that goes beyond just
               passing tests - we create confident, safe, and responsible drivers

@@ -1,109 +1,161 @@
 "use client";
 
 import React from "react";
-import { ChevronRight, Plus } from "lucide-react";
+import {
+  Play,
+  Monitor,
+  MessageCircle,
+  ShoppingCart,
+  Car,
+  ArrowRight,
+} from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
-const services = [
+const steps = [
   {
     id: 1,
-    title: "Instructor Training",
+    number: "01",
+    icon: MessageCircle,
+    title: "Consultation",
     description:
-      "There are many variations of passages of Lorem ipsum aagtiable but the majority have suffered",
-    image: "/professional-instructor-training-in-car.jpg",
+      "How all this mistaken denouncing pleasure and praising pain was give you.",
+    link: "/registration",
   },
   {
     id: 2,
-    title: "Road Safety Guide",
+    number: "02",
+    icon: ShoppingCart,
+    title: "Buy Your Course",
     description:
-      "There are many variations of passages of Lorem ipsum aagtiable but the majority have suffered",
-    image: "/road-safety-driving-guide.jpg",
+      "The same as saying through shrinking from toil and pain cases are perfect.",
+    link: "/courses",
   },
   {
     id: 3,
-    title: "Driving License",
+    number: "03",
+    icon: Car,
+    title: "Start Your Training",
     description:
-      "There are many variations of passages of Lorem ipsum aagtiable but the majority have suffered",
-    image: "/driving-license-certificate.jpg",
+      "Frequently occur that pleasures repudiated and annoyances accepted selection.",
+    link: "/registration",
   },
 ];
 
 export function ServicesSection() {
   return (
-    <section className="relative bg-white py-12 md:py-16">
-      {/* Background decorative image */}
-      <div className="absolute top-0 left-0 h-full w-auto">
+    <section className="relative py-12 md:py-20 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/images/about-cercle-1-5.webp"
-          alt="Decorative background"
-          width={193}
-          height={939}
-          className="object-contain opacity-100"
+          src="/images/course_bg_1.jpg"
+          alt="Background"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <div className="mb-4 flex items-center justify-center gap-2">
-            <ChevronRight className="h-4 w-4 text-brand" />
-            <ChevronRight className="h-4 w-4 text-brand" />
-            <ChevronRight className="h-4 w-4 text-brand" />
-            <span className="onest text-sm font-semibold text-brand">
-              Our Service
-            </span>
-            <ChevronRight className="h-4 w-4 text-brand" />
-            <ChevronRight className="h-4 w-4 text-brand" />
-            <ChevronRight className="h-4 w-4 text-brand" />
-          </div>
-          <h2 className="pathway-extreme text-balance text-4xl font-bold text-charcoal md:text-5xl">
-            We're Offering the Best
-            <br />
-            Services to You
-          </h2>
-        </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Two-column grid */}
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left Column - Video Section */}
+          <div className="space-y-8">
+            {/* Title */}
+            <h2 className="pathway-extreme text-4xl font-bold text-charcoal md:text-5xl">
+              Start the process
+            </h2>
 
-        {/* Services Grid */}
-        <div className="grid gap-8 md:grid-cols-3">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="group flex flex-col overflow-hidden bg-white shadow-lg transition-shadow hover:shadow-xl"
-              style={{ borderRadius: "10px" }}
-            >
-              {/* Image */}
-              <div className="relative h-64 w-full overflow-hidden bg-gray-200">
-                <Image
-                  src={service.image || "/placeholder.svg"}
-                  alt={service.title}
-                  fill
-                  className="object-cover transition-transform group-hover:scale-105"
-                />
+            {/* Description */}
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Denounce with righteous indignation & dislike men who are so
+              beguiled demoralized by hold the charms off pleasure.
+            </p>
+
+            {/* Video Player */}
+            <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-gray-200">
+              <Image
+                src="/modern-car-interior-driving.jpg"
+                alt="Video thumbnail - person inserting car key"
+                fill
+                className="object-cover grayscale"
+              />
+            </div>
+
+            {/* CTA Section */}
+            <div className="flex items-center gap-4 p-6 bg-yellow-50 rounded-lg">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-400">
+                <Monitor className="h-6 w-6 text-white" />
               </div>
-
-              {/* Content - Only title and paragraph have padding */}
-              <div className="px-6 pt-6 pb-0">
-                <h3 className="pathway-extreme mb-3 text-xl font-bold text-charcoal">
-                  {service.title}
-                </h3>
-                <p className="onest mb-6 text-sm text-gray-600">
-                  {service.description}
+              <div className="flex-1">
+                <p className="font-semibold text-charcoal">
+                  Get Your First Free Online Lesson Today...
+                </p>
+                <p className="text-sm text-gray-600">
+                  Schedule your class as your convenient.
                 </p>
               </div>
-
-              {/* Button - No padding, 50% width */}
-              <div className="p-0">
-                <button className="group/btn relative inline-flex items-center gap-2 bg-brand px-6 py-3 text-white transition-all hover:pr-8 w-1/2">
-                  <span className="pathway-extreme font-semibold">
-                    Read More
-                  </span>
-                  <Plus className="h-4 w-4" />
-                  {/* Angled right edge */}
-                  <div className="absolute -right-2 top-0 h-full w-4 bg-brand transform skew-x-12"></div>
-                </button>
-              </div>
+              <Link
+                href="/registration"
+                className="flex items-center gap-2 text-brand font-semibold hover:text-brand/80 transition-colors cursor-pointer"
+              >
+                <span>SCHEDULE NOW</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
-          ))}
+          </div>
+
+          {/* Right Column - Process Steps */}
+          <div className="flex flex-col justify-between h-full">
+            <div className="space-y-20">
+              {steps.map((step, index) => (
+                <div key={step.id} className="relative">
+                  {/* Step Number Background */}
+                  <div className="absolute -left-4 -top-4 text-8xl font-bold text-gray-200 select-none">
+                    {step.number}
+                  </div>
+
+                  {/* Step Content */}
+                  <Link
+                    href={step.link}
+                    className="relative flex items-start gap-6 group cursor-pointer"
+                  >
+                    {/* Icon */}
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-black flex-shrink-0 group-hover:bg-black/80 transition-colors">
+                      <step.icon className="h-6 w-6 text-red-500" />
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1">
+                      <h3 className="pathway-extreme text-xl font-bold text-charcoal mb-2 group-hover:text-red-500 transition-colors">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  </Link>
+
+                  {/* Connecting Line (except for last step) */}
+                  {index < steps.length - 1 && (
+                    <div className="absolute left-6 top-20 w-0.5 h-16 bg-gray-300"></div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Send Request Button */}
+            <div className="mt-8">
+              <Button
+                size="lg"
+                asChild
+                className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-4 text-lg"
+              >
+                <Link href="/contact">SEND REQUEST</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

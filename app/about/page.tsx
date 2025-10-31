@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <main>
       <BreadcrumbHero
-        leftText="About Top Star Driving School"
+        leftText="About Driving Hero"
         rightText="Home - About Us"
         backgroundImage="/modern-car-interior-driving.jpg"
       />

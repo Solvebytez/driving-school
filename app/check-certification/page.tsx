@@ -7,7 +7,7 @@ export default function CheckCertificationPage() {
       <BreadcrumbHero
         leftText="Check Certification"
         rightText="Home - Check Certification"
-        backgroundImage="/driving-license-certificate.jpg"
+        backgroundImage="/images/page-header-bg-1-1.png"
       />
       <CertificationFormSection />
     </main>

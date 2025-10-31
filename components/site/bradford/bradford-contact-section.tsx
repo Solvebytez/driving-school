@@ -55,7 +55,7 @@ export function BradfordContactSection() {
                     Email
                   </h3>
                   <p className="onest text-gray-600">
-                    bradford@topstardriving.com
+                    bradford@drivinghero.com
                   </p>
                 </div>
               </div>

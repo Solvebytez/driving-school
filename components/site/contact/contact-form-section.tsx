@@ -167,7 +167,7 @@ export function ContactFormSection({
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title={`Top Star Driving School - ${locationData.name}`}
+                  title={`Driving Hero - ${locationData.name}`}
                   className="w-full h-[500px]"
                 />
               </div>

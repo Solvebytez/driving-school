@@ -46,10 +46,10 @@ export function OurStorySection() {
                     </div>
                   </div>
                   <h3 className="pathway-extreme text-xl font-bold text-gray-800 mb-3">
-                    Top Star Driving School Founded
+                    Driving Hero Founded
                   </h3>
                   <p className="onest text-gray-600 leading-relaxed">
-                    Glenn Davidson established Top Star Driving School with a
+                    Glenn Davidson established Driving Hero with a
                     single car and a big dream. Starting in Bradford, we began
                     with the belief that every student deserves personalized,
                     patient, and professional driving instruction.
@@ -60,7 +60,7 @@ export function OurStorySection() {
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
                     src="/images/about-cercle-1-5.webp"
-                    alt="Top Star Driving School founding"
+                    alt="Driving Hero founding"
                     fill
                     className="object-cover"
                   />
@@ -167,7 +167,7 @@ export function OurStorySection() {
                     Leading the Industry
                   </h3>
                   <p className="onest text-gray-600 leading-relaxed">
-                    Today, Top Star Driving School has successfully trained over
+                    Today, Driving Hero has successfully trained over
                     2,000 students with a 95% first-time pass rate. We continue
                     to innovate with online courses, flexible scheduling, and
                     cutting-edge teaching methods.

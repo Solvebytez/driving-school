@@ -327,7 +327,7 @@ export function RegistrationFormSection() {
                 {/* Payment Notice */}
                 <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                   <p className="onest text-sm text-red-700">
-                    <strong>Please note:</strong> Top Star Driving School will
+                    <strong>Please note:</strong> Driving Hero will
                     only take a $50 deposit at the time of registration for
                     Online Courses, *Full payment for Private Lesson Packages
                     will be required online
@@ -750,7 +750,7 @@ export function RegistrationFormSection() {
                       📞 <strong>Phone:</strong> (905)-392-1472
                     </p>
                     <p className="onest text-xs text-gray-600">
-                      📧 <strong>Email:</strong> info@topstardriving.com
+                      📧 <strong>Email:</strong> info@drivinghero.com
                     </p>
                     <p className="onest text-xs text-gray-600">
                       🕒 <strong>Hours:</strong> Mon-Sat 8:00 AM - 7:00 PM

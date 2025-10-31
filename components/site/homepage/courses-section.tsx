@@ -26,7 +26,7 @@ export function CoursesSection() {
                 WHY CHOOSE US
               </div>
               <h2 className="pathway-extreme text-3xl font-bold text-gray-800">
-                Why learn with Top Star Driving School
+                Why learn with Driving Hero
               </h2>
             </div>
 
@@ -53,7 +53,7 @@ export function CoursesSection() {
             <div className="relative w-full h-full">
               <iframe
                 src="https://www.youtube.com/embed/FEGUjo9Fi48"
-                title="Top Star Driving School Video"
+                title="Driving Hero Video"
                 className="w-full h-full"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
